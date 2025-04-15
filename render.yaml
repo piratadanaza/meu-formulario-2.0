@@ -1,0 +1,24 @@
+# Exported from Render on 2025-04-15T10:28:02Z
+services:
+- type: web
+  name: meu-formulario-2.0
+  runtime: node
+  repo: https://github.com/piratadanaza/meu-formulario-2.0
+  plan: free
+  envVars:
+  - key: DB_NAME
+    sync: false
+  - key: DB_PASS
+    sync: false
+  - key: DB_USER
+    sync: false
+  - key: DB_PORT
+    sync: false
+  - key: DB_HOST
+    sync: false
+  - key: DB_LOCAL
+    sync: false
+  region: virginia
+  buildCommand: npm install
+  startCommand: node index.js
+version: "1"
